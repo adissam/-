@@ -1,0 +1,29 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-serif: "Pretendard", serif;
+  
+  --color-brand-gold: #E11D48; /* Changed to Red */
+  --color-brand-dark: #1A1A1A;
+  --color-brand-light: #FDFCFB;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-brand-dark bg-brand-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold; /* Using sans for headings too as requested */
+  }
+}
+
+.luxury-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20;
+}
